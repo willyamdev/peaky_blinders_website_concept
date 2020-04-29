@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+import routes from './routes';
+import './pages/css/global.css';
+import Toolbar from './pages/components/toolbar/Toolbar';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
 
-export default App;
+      <Toolbar/>
+
+      {routes.map((value, key) => {
+        return <Route
+        key={key}
+        path={value.path}
+        component={value.component}
+        exact={value.exact}
+        ></Route>
+      })}
+
+    </div>
+  )
+}
