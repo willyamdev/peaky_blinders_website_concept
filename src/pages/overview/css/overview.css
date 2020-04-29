@@ -1,0 +1,30 @@
+@import url("./overview-animation.css");
+.overview {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: overviewAnimation;
+  animation-duration: 2s;
+}
+.overview img {
+  object-fit: contain;
+  width: 900px;
+}
+.overview .content-overview {
+  margin-top: 30px;
+  width: 70%;
+}
+.overview .content-overview h1 {
+  text-align: center;
+  color: #A8A79B;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.overview .content-overview p {
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #A8A79B;
+}
+
+/*# sourceMappingURL=overview.css.map */

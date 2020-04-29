@@ -8,12 +8,13 @@ export default function Home() {
 
   let [characterSelected, setCharacter] = useState(0);
 
-  function changeCharacter(char){
+  function changeCharacter(char) {
+    if(char === -1) char = character.length - 1;
 
-    if(char.index === 1){
+    if(char >= character.length){
       setCharacter(0);
     }else{
-      setCharacter(1);
+      setCharacter(char);
     }
 
   }
@@ -23,27 +24,28 @@ export default function Home() {
 
       {character.map((value, key) => {
         if (value.index === characterSelected) {
-          return <div className="content">
+          return <div className="content" key={key}>
 
             <div className="info-container">
               <h1>{value.name}</h1>
-              <p>
-                {value.description}
-              </p>
+
+              {value.description.split("\n").map((i, keytwo) => {
+                return <p key={keytwo}>{i}</p>;
+              })}
+
             </div>
 
             <div className="image-container">
               <img src={value.photo} alt=""></img>
+            </div>
 
-              <div className="character-image-container">
-                <div className="character-image-button" onClick={()=> changeCharacter(value)}>
-                  <FontAwesomeIcon icon={faChevronLeft} className="icon"/>
-                </div>
-                <div className="character-image-button" onClick={()=> changeCharacter(value)}>
-                  <FontAwesomeIcon icon={faChevronRight} className="icon"/>
-                </div>
-              </div>
-
+            <div className="character-image-container">
+              <button className="character-image-button" onClick={() => changeCharacter(value.index - 1)}>
+                <FontAwesomeIcon icon={faChevronLeft} className="icon" />
+              </button>
+              <button className="character-image-button" onClick={() => changeCharacter(value.index + 1)}>
+                <FontAwesomeIcon icon={faChevronRight} className="icon" />
+              </button>
             </div>
 
           </div>

@@ -1,3 +1,4 @@
+@import url("./home-animation.css");
 .content {
   height: 100vh;
   width: 100%;
@@ -9,6 +10,8 @@
   justify-content: center;
   flex-basis: 45%;
   padding-left: 50px;
+  animation: infoContainerAnimation;
+  animation-duration: 1s;
 }
 .content .info-container h1 {
   letter-spacing: 5px;
@@ -19,6 +22,7 @@
   font-family: "Girassol", cursive;
 }
 .content .info-container p {
+  margin-bottom: 10px;
   color: #A8A79B;
   text-align: justify;
 }
@@ -26,18 +30,20 @@
   position: relative;
   display: flex;
   flex-basis: 55%;
+  animation: imageContainerAnimation;
+  animation-duration: 1s;
 }
 .content .image-container img {
   margin: 0 auto;
 }
-.content .image-container .character-image-container {
+.content .character-image-container {
   display: flex;
   align-items: center;
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
-.content .image-container .character-image-container .character-image-button {
+.content .character-image-container .character-image-button {
   margin: 5px;
   background-color: rgba(184, 184, 184, 0.3);
   width: 60px;
@@ -47,10 +53,14 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border: none;
 }
-.content .image-container .character-image-container .character-image-button .icon {
+.content .character-image-container .character-image-button .icon {
   font-size: 25px;
   color: white;
+}
+.content .character-image-container .character-image-button:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=home.css.map */

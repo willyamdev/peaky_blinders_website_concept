@@ -1,0 +1,10 @@
+@keyframes overviewAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=overview-animation.css.map */

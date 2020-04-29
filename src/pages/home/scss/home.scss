@@ -1,3 +1,5 @@
+@import url('./home-animation.css');
+
 .content {
     height: 100vh;
     width: 100%;
@@ -9,6 +11,9 @@
         justify-content: center;
         flex-basis: 45%;
         padding-left: 50px;
+        animation: infoContainerAnimation;
+        animation-duration: 1s;
+
 
         h1 {
             letter-spacing: 5px;
@@ -20,6 +25,7 @@
         }
 
         p {
+            margin-bottom: 10px;
             color: #A8A79B;
             text-align: justify;
         }
@@ -29,35 +35,41 @@
         position: relative;
         display: flex;
         flex-basis: 55%;
+        animation: imageContainerAnimation;
+        animation-duration: 1s;
 
         img {
             margin: 0 auto;
         }
-
-        .character-image-container {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-
-            .character-image-button{
-                margin: 5px;
-                background-color: rgba(184, 184, 184, 0.3);
-                width: 60px;
-                height: 60px;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-
-                .icon{
-                    font-size: 25px;
-                    color: white;
-                }
-            }
-        }
     }
 
+    .character-image-container {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        .character-image-button{
+            margin: 5px;
+            background-color: rgba(184, 184, 184, 0.3);
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: none;
+
+            .icon{
+                font-size: 25px;
+                color: white;
+            }
+        }
+
+        .character-image-button:focus{
+            outline: none;
+        }
+    }
 }

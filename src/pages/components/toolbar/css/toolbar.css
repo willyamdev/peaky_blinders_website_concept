@@ -14,7 +14,8 @@ nav img {
   width: 100px;
   margin-right: auto;
 }
-nav h4 {
+nav a {
+  text-decoration: none;
   margin-left: 50px;
   color: #979797;
 }
