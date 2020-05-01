@@ -1,0 +1,31 @@
+
+.story{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    img{
+        object-fit: contain;
+        width: 600px;
+    }
+    
+    .content-story{
+        margin-top: 30px;
+        width: 70%;
+
+        h1{
+            text-align: center;
+            color: #A8A79B;
+            margin-bottom: 20px;
+            font-size: 50px;
+        }
+        
+        p{
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #A8A79B;
+        }
+    }
+
+}

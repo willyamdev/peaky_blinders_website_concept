@@ -22,7 +22,7 @@ export default function Overview() {
         </p>
 
         <p>
-        The fourth series begins on Christmas Eve 1925 and ends following the general strike of May 1926 with Tommy being elected as a Member of Parliament in 1927. The fifth series begins two years later on 29 October 1929 (Black Tuesday) and ends on 7 December 1929, the morning after a rally led by fascist leader Oswald Mosley.
+          The fourth series begins on Christmas Eve 1925 and ends following the general strike of May 1926 with Tommy being elected as a Member of Parliament in 1927. The fifth series begins two years later on 29 October 1929 (Black Tuesday) and ends on 7 December 1929, the morning after a rally led by fascist leader Oswald Mosley.
         </p>
 
       </div>
