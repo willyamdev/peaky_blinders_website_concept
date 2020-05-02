@@ -1,4 +1,5 @@
 @import url('./story-animation.css');
+@import url('./story-responsive.css');
 
 .story{
     padding-top: 80px;
@@ -10,12 +11,10 @@
     
     img{
         object-fit: contain;
-        width: 600px;
     }
     
     .content-story{
         margin-top: 30px;
-        width: 70%;
 
         h1{
             text-align: center;

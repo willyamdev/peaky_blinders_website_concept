@@ -1,4 +1,5 @@
 @import url("./overview-animation.css");
+@import url("./overview-responsive.css");
 .overview {
   padding-top: 80px;
   display: flex;
@@ -9,11 +10,9 @@
 }
 .overview img {
   object-fit: contain;
-  width: 900px;
 }
 .overview .content-overview {
   margin-top: 30px;
-  width: 70%;
 }
 .overview .content-overview h1 {
   text-align: center;

@@ -1,4 +1,5 @@
 @import url("./story-animation.css");
+@import url("./story-responsive.css");
 .story {
   padding-top: 80px;
   display: flex;
@@ -9,11 +10,9 @@
 }
 .story img {
   object-fit: contain;
-  width: 600px;
 }
 .story .content-story {
   margin-top: 30px;
-  width: 70%;
 }
 .story .content-story h1 {
   text-align: center;
