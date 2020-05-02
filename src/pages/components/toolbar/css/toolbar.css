@@ -1,5 +1,5 @@
+@import url("./toolbar-responsive.css");
 header {
-  position: fixed;
   width: 100%;
   z-index: 1;
 }
@@ -8,7 +8,6 @@ nav {
   height: 80px;
   display: flex;
   align-items: center;
-  padding: 0 70px;
 }
 nav img {
   width: 100px;
@@ -16,8 +15,11 @@ nav img {
 }
 nav a {
   text-decoration: none;
-  margin-left: 50px;
   color: #979797;
+}
+nav .toolbar-itens {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=toolbar.css.map */

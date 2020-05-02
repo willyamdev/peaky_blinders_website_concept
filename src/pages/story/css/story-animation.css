@@ -1,0 +1,10 @@
+@keyframes storyAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=story-animation.css.map */

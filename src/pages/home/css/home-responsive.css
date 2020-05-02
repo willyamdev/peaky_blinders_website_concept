@@ -1,0 +1,106 @@
+/* Extra small devices */
+@media (min-width: 200px) and (max-width: 575px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .info-container {
+    order: 2;
+    margin: 20px;
+  }
+  .content .info-container h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .content .image-container {
+    order: 1;
+  }
+  .content .image-container img {
+    width: 100%;
+  }
+  .content .character-image-container {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .info-container {
+    order: 2;
+    margin: 20px;
+  }
+  .content .info-container h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+  .content .image-container {
+    order: 1;
+  }
+  .content .character-image-container {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .content {
+    flex-direction: column;
+  }
+  .content .info-container {
+    order: 2;
+    margin: 20px;
+  }
+  .content .info-container h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+  .content .image-container {
+    order: 1;
+  }
+  .content .character-image-container {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .content {
+    height: 100vh;
+  }
+  .content .info-container {
+    padding-left: 50px;
+  }
+  .content .info-container h1 {
+    font-size: 80px;
+  }
+  .content .character-image-container {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .content {
+    height: 100vh;
+  }
+  .content .info-container {
+    padding-left: 50px;
+  }
+  .content .info-container h1 {
+    font-size: 80px;
+  }
+  .content .character-image-container {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/*# sourceMappingURL=home-responsive.css.map */

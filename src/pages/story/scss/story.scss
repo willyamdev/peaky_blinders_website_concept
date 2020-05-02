@@ -1,9 +1,12 @@
+@import url('./story-animation.css');
 
 .story{
     padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: storyAnimation;
+    animation-duration: 2s;
     
     img{
         object-fit: contain;

@@ -6,12 +6,14 @@ import { Link } from 'react-router-dom';
 export default function Toolbar() {
   return (
     <header>
-        <nav>
-            <img src={brand} alt=""></img>
-            <Link to="/">Home</Link>
-            <Link to="/overview">Overview</Link>
-            <Link to="/story">Story</Link>
-        </nav>
+      <nav>
+        <img src={brand} alt=""></img>
+        <div className="toolbar-itens">
+          <Link to="/">Home</Link>
+          <Link to="/overview">Overview</Link>
+          <Link to="/story">Story</Link>
+        </div>
+      </nav>
     </header>
   )
 }
